@@ -40,14 +40,14 @@ scene.add( cube );
 // -- Lines end
 
 // -- 3D models
-import { GLTFLoader } from 'three/examples/jsm/loaders/GLTFLoader.js';
+import { GLTFLoader } from '/node_modules/three/examples/jsm/loaders/GLTFLoader.js';
 
 let loadedModels = [];
 let numOfModels = 10;
 const loader = new GLTFLoader();
 
 for(let i = 0; i < numOfModels; i++){
-	loader.load( 'assets/shiba/scene.gltf', function ( gltf ) {
+	loader.load( '/assets/shiba/scene.gltf', function ( gltf ) {
 
 		loadedModels[i] = gltf;
 		scene.add( gltf.scene );
