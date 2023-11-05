@@ -1,5 +1,6 @@
 //import * as THREE from 'three';
-import * as THREE from "/node_modules/three/build/three.module.js";
+//import * as THREE from "node_modules/three/build/three.module.js";
+import * as THREE from "node_modules/three";
 
 const renderer = new THREE.WebGLRenderer();
 renderer.setSize( window.innerWidth, window.innerHeight );
@@ -40,7 +41,7 @@ scene.add( cube );
 // -- Lines end
 
 // -- 3D models
-import { GLTFLoader } from '/node_modules/three/examples/jsm/loaders/GLTFLoader.js';
+import { GLTFLoader } from 'node_modules/three/examples/jsm/loaders/GLTFLoader.js';
 
 let loadedModels = [];
 let numOfModels = 10;
