@@ -44,7 +44,9 @@ scene.add( cube );
 // -- Lines end
 
 // -- 3D models
-import { GLTFLoader } from '/node_modules/three/examples/jsm/loaders/GLTFLoader.js';
+//import { GLTFLoader } from '/node_modules/three/examples/jsm/loaders/GLTFLoader.js';
+import { GLTFLoader } from 'https://unpkg.com/three@0.158.0/examples/jsm/loaders/GLTFLoader.js';
+
 
 let loadedModels = [];
 let numOfModels = 10;
