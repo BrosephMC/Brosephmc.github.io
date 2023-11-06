@@ -45,10 +45,9 @@ scene.add( cube );
 
 // -- 3D models
 // import { GLTFLoader } from '/node_modules/three/examples/jsm/loaders/GLTFLoader.js';
-// import { GLTFLoader } from 'https://unpkg.com/three@0.158.0/examples/jsm/loaders/GLTFLoader.js';
-// import { GLTFLoader } from 'https://cdn.jsdelivr.net/npm/three@0.158.0/examples/jsm/loaders/GLTFLoader.js';
+import { GLTFLoader } from 'https://cdn.jsdelivr.net/npm/three@0.158.0/examples/jsm/loaders/GLTFLoader.js';
 // import { GLTFLoader } from 'three/addons/loaders/GLTFLoader.js';
-import { GLTFLoader } from 'https://unpkg.com/three@0.158.0/examples/jsm/loaders/GLTFLoader.js';
+// import { GLTFLoader } from 'https://unpkg.com/three@0.158.0/examples/jsm/loaders/GLTFLoader.js';
 
 
 
@@ -73,13 +72,20 @@ for(let i = 0; i < numOfModels; i++){
 }
 // -- 3D models end
 
+// init positions
+//for(let i = 0; i < numOfModels; i++){
+	// loadedModels[0].scene.rotation.x += 0.01;
+	// loadedModels[0].scene.rotation.y += 0.01;
+	// loadedModels[0].scene.position.z += 0.01;
+//}
+
 function animate() {
 	requestAnimationFrame( animate );
 
     cube.rotation.x += 0.01;
     cube.rotation.y += 0.01;
 	//cube.position.z = loadedModels[0].scene.position.z - 1;
-
+/*
 	for(let i = 0; i < numOfModels; i++){
 		loadedModels[i].scene.rotation.x += 0.01;
 		loadedModels[i].scene.rotation.y += 0.005*i;
@@ -90,7 +96,7 @@ function animate() {
 			loadedModels[i].scene.position.z = Math.tan(loadedModels[i].scene.rotation.y);
 		}
 		
-	}
+	}*/
 
 	renderer.render( scene, camera );
 }
