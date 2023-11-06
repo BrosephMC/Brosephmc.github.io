@@ -57,7 +57,7 @@ let numOfModels = 10;
 const loader = new GLTFLoader();
 
 for(let i = 0; i < numOfModels; i++){
-	loader.load( './assets/shiba/scene.gltf', function ( gltf ) {
+	loader.load( 'assets/shiba/scene.gltf', function ( gltf ) {
 	// loader.load( 'https://brosephmc.github.io/assets/shiba/scene.gltf', function ( gltf ) {
 
 		loadedModels[i] = gltf;
