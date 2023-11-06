@@ -78,7 +78,7 @@ function animate() {
 
     cube.rotation.x += 0.01;
     cube.rotation.y += 0.01;
-	cube.position.z = loadedModels[0].scene.position.z - 1;
+	//cube.position.z = loadedModels[0].scene.position.z - 1;
 
 	for(let i = 0; i < numOfModels; i++){
 		loadedModels[i].scene.rotation.x += 0.01;
